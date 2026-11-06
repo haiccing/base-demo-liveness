@@ -1,6 +1,6 @@
 {
   "name": "base-demo-liveness",
-  "description": "Demo project: A node goes quiet. Its project (project.json), its Splectral component (splectral/base-demo-liveness), and its click and run (run.sh).",
+  "description": "Demo project: A node goes quiet. Its project (project.json) and its Splectral component (splectral/base-demo-liveness).",
   "private": true,
   "license": "MIT",
   "pkgm": {
@@ -11,11 +11,10 @@
     "folders": [
       "splectral/base-demo-liveness"
     ],
-    "hash": "c71b20f9e3a9ffa5cdcfa273ae3e83805c7cb946dd5e2299861360abf9677fb4",
+    "hash": "f2850e5138c0cf0e00b63f6ee4e1c85b0314bcbc6fec78cd665241410de5b243",
     "root": [
       "project.json",
-      "README.md",
-      "run.sh"
+      "README.md"
     ]
   }
 }
