@@ -1,20 +1,60 @@
 {
   "name": "base-demo-liveness",
-  "description": "Demo project: A node goes quiet. Its project (project.json) and its Splectral component (splectral/base-demo-liveness).",
+  "description": "A demo: a node goes quiet. One host, the swarm hosts (master, node-1) in containers, its Splectral server and the liveness scenario. On Bare.",
   "private": true,
   "license": "MIT",
   "pkgm": {
     "package": "demo-liveness",
-    "requires": [
-      "splectral"
+    "modules": {
+      "ours": [
+        "pear-full-square/mycelium-git",
+        "pear-full-square/mycelium-layer",
+        "pear-full-square/mycelium-topic",
+        "pear-full-square/mycelium-uri",
+        "pear-full-square/mycelium-xpath",
+        "pear-full-square/p2p-channel",
+        "pear-full-square/p2p-connect",
+        "pear-full-square/p2p-dht",
+        "pear-full-square/p2p-mrepo",
+        "pear-full-square/p2p-node",
+        "pear-full-square/p2p-node-manager",
+        "pear-full-square/p2p-replicate",
+        "pear-full-square/p2p-rns",
+        "pear-full-square/p2p-store",
+        "pear-full-square/splectral-contract",
+        "pear-full-square/splectral-model",
+        "pear-full-square/splectral-p2p-actions",
+        "pear-full-square/splectral-p2p-observer",
+        "pear-full-square/splectral-p2p-watchers",
+        "pear-full-square/splectral-replay",
+        "pear-full-square/splectral-scenario",
+        "pear-full-square/splectral-server",
+        "pear-full-square/splectral-shell",
+        "pear-full-square/splectral-timeline",
+        "pear-full-square/splectral-transport",
+        "splectral/base-demo-liveness",
+        "splectral/base-view-map"
+      ],
+      "third": 219
+    },
+    "swarms": [
+      "hosts"
     ],
-    "folders": [
-      "splectral/base-demo-liveness"
+    "tests": [
+      "liveness",
+      "modules-load",
+      "sets"
     ],
-    "hash": "f2850e5138c0cf0e00b63f6ee4e1c85b0314bcbc6fec78cd665241410de5b243",
-    "root": [
-      "project.json",
-      "README.md"
-    ]
+    "sets": [
+      "full",
+      "validation"
+    ],
+    "platform": false,
+    "unresolved": [
+      "pear-full-square/p2p-mrepo: from-native",
+      "pear-full-square/p2p-mrepo: from-bundle",
+      "pear-full-square/p2p-mrepo: a"
+    ],
+    "hash": "8ecaca80bd3ab7bc2318d6f022c5c49d407eeb77473d2b77c8a0d93bf1d23432"
   }
 }
